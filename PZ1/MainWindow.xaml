@@ -12,9 +12,9 @@
             <MenuItem x:Name="menuRectangle" Header="Rectangle" Click="MenuItem_Click_1"></MenuItem>
             <MenuItem x:Name="menuPolygon" Header="Polygon" Click="MenuItem_Click_2"></MenuItem>
             <MenuItem x:Name="menuImage" Header="Image" Click="MenuItem_Click_3"></MenuItem>
-            <MenuItem x:Name="menuUndo" Header="Undo" Command="ApplicationCommands.Undo"></MenuItem>
-            <MenuItem x:Name="menuRedo" Header="Redo" Command="ApplicationCommands.Redo"></MenuItem>
-            <MenuItem x:Name="menuClear" Header="Clear" Command="ApplicationCommands.Delete" CommandTarget="{Binding ElementName=canvas}"></MenuItem>
+            <MenuItem x:Name="menuUndo" Header="Undo" Click="menuUndo_Click"></MenuItem>
+            <MenuItem x:Name="menuRedo" Header="Redo" Click="menuRedo_Click"></MenuItem>
+            <MenuItem x:Name="menuClear" Header="Clear" Click="menuClear_Click"></MenuItem>
         </Menu>
         <Canvas x:Name="canvas" Background="Beige" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="790" MouseRightButtonDown="canvas_MouseRightButtonDown" MouseLeftButtonDown="Canvas_MouseLeftButtonDown"/>
     </DockPanel>
